@@ -1,0 +1,52 @@
+.sobre{
+    justify-content: center;
+    margin: 50px 10%;
+    display: flex;
+    padding: 19px;
+    border-radius: 4px;
+    &:hover{
+        background-color: #02a2ff1a;
+    }
+
+    img{
+        width: 550px;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+
+        &:hover{
+    transform: scale(1.015);
+        }
+    }
+
+    .coluna{
+        margin: 0 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        h2{
+            font-size: 2em;
+            font-style: italic;
+            padding-bottom: 0.5em;
+            border-bottom: 3px solid #9b59b6;
+            cursor: default;
+        }
+
+        p{
+            font-size: 1em;
+            cursor: default;
+        }
+
+        .bootstrap{
+            max-width: 3em;
+        }
+
+        .social-media-itens{
+            list-style: none;
+            display: flex;
+            justify-content: start;
+            gap: 30%;
+        }
+
+    }
+}

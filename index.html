@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,171 +7,158 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./build/main.css">
 </head>
 <body>
     <header>
         <div class="container">
+            <h1>Loja Nike</h1>
 
-            <h1>Nike Shoes</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#tenis">Tênis</a>
+                            </li>
+                            <li>
+                                <a href="#roupas">Roupas</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
-            <form>
-                <input type="search" placeholder="Busque aqui">
-                <button type="submit">Pesquisar</button>
-            </form>
         </div>
-
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#produtos">Produtos</a>
-                </li>
-                    <ul class="submenu">
-                        <li>
-                            <a href="#tenis">Tênis</a>
-                        </li>
-                        <li>
-                            <a href="#roupas">Roupas</a>
-                        </li>
-                    </ul>
-                <li>
-                    <a href="#sobre">Sobre Nós</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="clear"></div>
-
     </header>
 
-    <div id="#sobre" class="sobre">
-        <a href="https://www.nike.com/">
-            <img src="./download.jpeg" alt="Loja Física da Nike">
-        </a>
-        <div class="descricao">
-            <h2>Sobre Nós</h2>
-            <p>A Nike é uma empresa global líder em calçados, roupas e acessórios esportivos. Fundada em 1964, a marca se consolidou como referência na indústria do esporte, oferecendo produtos inovadores e inspiradores para atletas de todos os níveis.</p>
+    <section id="sobre" class="sobre">
+    <a href="https://www.nike.com/">
+        <img src="./images/bags-rack-store.jpg" alt="Loja Física">
+    </a>
+        <div class="coluna">
+            <h2>Sobre a Loja</h2>
+            <p>A Nike é uma das maiores e mais reconhecidas marcas de artigos esportivos do mundo. Fundada em 1972, a empresa se destaca pela inovação em tecnologia e design de produtos de alta qualidade. A loja oferece uma ampla variedade de tênis, roupas e acessórios para atletas e entusiastas de esportes, combinando estilo, conforto e desempenho em cada produto.</p>
+
+                <ul class="social-media-itens">
+                    <li>
+                        <a href="https://www.youtube.com/@nike">
+                            <img src="./images/social/youtube.svg" alt="" class="bootstrap">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/@nike">
+                            <img src="./images/social/facebook.svg" alt="" class="bootstrap">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/nike">
+                            <img src="./images/social/twitter.svg" alt="" class="bootstrap">
+                        </a>
+                    </li>
+                </ul>
+
         </div>
-    </div>
+    </section>
 
-    <div id="#produtos" class="produtos">
-        <h2>Nossos Produtos</h2>
-            <div class="tenis" id="tenis">
-                <h3>Tênis</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.nike.com.br/tenis-nike-air-force-1-07-masculino-029308.html?cor=5B">
-                            <img src="./jdpt_product_list.webp" alt="Tenis Nike Air Force 1">
-                            <h4>Nike Air Force</h4>
-                            <p>
-                                O Nike Air Force 1 é um tênis icônico que combina estilo clássico com conforto moderno. Com seu design atemporal e versatilidade, é perfeito para qualquer ocasião.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.nike.com.br/tenis-nike-pegasus-41-feminino-028661.html?cor=ID">
-                            <img src="./NIK24612_400_1.webp" alt="Tenis Nike Pegasus 41">
-                            <h4>Nike Pegasus</h4>
-                            <p>
-                                O Nike Pegasus 41 é um tênis de corrida projetado para oferecer conforto e desempenho excepcionais. Com amortecimento responsivo e suporte leve, é ideal para corredores de todos os níveis.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.buscape.com.br/tenis/tenis-nike-metcon-8-cinza?_lc=88&searchterm=nike%2Bmetcon">
-                            <img src="./NIK24612_400_1.webp" alt="Tenis Nike Metcon 8">
-                            <h4>Nike Metcon</h4>
-                            <p>
-                                O Nike Metcon 8 é um tênis de treinamento versátil, projetado para suportar os treinos mais intensos. Com estabilidade e durabilidade aprimoradas, é perfeito para atletas que buscam desempenho máximo.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.netshoes.com.br/p/tenis-nike-revolution-8-feminino-SGL-0026-026">
-                            <img src="./NIK24612_400_1.webp" alt="Tenis Nike Revolution 8">
-                            <h4>Nike Revolution 8</h4>
-                            <p>
-                                O Nike Revolution 8 é um tênis de treinamento versátil, projetado para suportar os treinos mais intensos. Com estabilidade e durabilidade aprimoradas, é perfeito para atletas que buscam desempenho máximo.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="roupas" id="roupas">
-                <h3>Roupas</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.amazon.com.br/Nike-Moletom-masculino-completo-HV0949-051/dp/B0DNHSK6QZ?psc=1">
-                            <img src="./61-MKkTD82L._AC_SY445_.jpg" alt="Nike Moletom">
-                            <h4>Moletom Nike</h4>
-                            <p>
-                                O moletom Nike é um item essencial para quem busca conforto e estilo. Feito com materiais de alta qualidade, oferece aquecimento e suporte para qualquer atividade ao ar livre.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.nike.com.br/camisa-nike-dri-fit-masculina-007226.html?cor=51">
-                            <img src="./00722651A2.avif" alt="Camisa Nike Dri-FIT">
-                            <h4>Camisa Nike Dri-FIT</h4>
-                            <p>
-                                A camisa Nike Dri-FIT é ideal para atividades físicas intensas. Com tecnologia de absorção de umidade, mantém você seco e confortável durante o treino.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.centauro.com.br/calca-masculina-nike-club-knit-995555.html?cor=02">
-                            <img src="./Calça Masculina Nike Club Knit em Promoção _ Centauro_files/99555502A14.jpg" alt="Calça Nike">
-                            <h4>Calça Nike Club Knit</h4>
-                            <p>
-                                A calça Nike Club Knit oferece conforto e estilo para o dia a dia. Com tecido macio e ajuste relaxado, é perfeita para atividades casuais ou treinos leves.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.centauro.com.br/kit-de-meias-nike-everyday-cushioned-low-com-3-pares-adulto-935591.html?cor=01">
-                            <img src="./93559101A14.jpg" alt="Meias Nike">
-                            <h4>Meias Nike Everyday Cushioned Low</h4>
-                            <p>
-                                As meias Nike Everyday Cushioned Low oferecem conforto e proteção para atividades físicas. Com tecnologia de amortecimento, são ideais para uso diário e treinos leves.
-                            </p>
-                            <button type="button">Adicionar ao Carrinho</button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-    </div>
-
-    <div class="contato" id="contato">
-        <h2>Contato</h2>
-        <form>
-            <label for="name">Seu nome:</label>
-            <input type="text" placeholder="Insira o seu nome completo.">
-
-            <label for="email">Seu email:</label>
-            <input type="email" placeholder="Insira o seu email.">
-
-            <label for="numero">Seu número:</label>
-            <input type="number" placeholder="Insira o seu número.">
-        </form>
-    </div>
+    <section id="produtos" class="produtos">
+        <h2 id="tenis">Tênis</h2>
+        <ul>
+            <li>
+                <a href="https://www.adidas.com.br/tenis-samba-og/JK4976.html">
+                    <img src="./images/produtos/Tenis_Samba_OG_Branco_JK4976_01_00_standard.avif" alt="Tênis Samba">
+                    <h3>Samba OG</h3>
+                    <p class="descricao">
+                        Este tênis adidas Samba OG é essencial para quem cria tendências em vez de só as seguir.
+                    </p>
+                    <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.adidas.com.br/tenis-sambae/JQ0982.html?pr=product_rr&slot=10&rec=ds">
+                    <img src="./images/produtos/Tenis_Sambae_Branco_JQ0982.avif" alt="Tênis Sambae">
+                    <h3>Sambae</h3>
+                    <p class="descricao">
+                        Este tênis tem uma parte cabedal de couro macio e forro sintético para manter você confortável o dia todo.
+                    </p>
+                    <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.adidas.com.br/samba-og-w/JK4977.html">
+                    <img src="./images/produtos/SAMBA_OG_W_Preto_JK4977.avif" alt="Samba og w">
+                    <h3>Samba OG W</h3>
+                    <p class="descricao">
+                        O cabedal em couro macio, a biqueira reforçada e o solado de borracha natural têm um apelo retrô e durabilidade.
+                    </p>
+                    <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.adidas.com.br/tenis-samba-xlg/JR0929.html?pr=product_rr&slot=11&rec=ds">
+                    <img src="./images/produtos/Tenis_Samba_XLG_Marrom_JR0929.avif" alt="Tênis Samba XLG">
+                    <h3>Samba XLG</h3>
+                    <p class="descricao">
+                        O cabedal em couro e têxtil é finalizado com uma sobreposição de biqueira de suede
+                    </p>
+                    <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+        </ul>
+        <h2 id="roupas">Roupas</h2>
+        <ul>
+            <li>
+                <a href="https://www.nike.com.br/camiseta-dri-fit-nike-pro-training-masculina-059096.html?cor=ID">
+                        <img src="./images/produtos/camisa.avif" alt="Camiseta">
+                        <h3>Camiseta Dri</h3>
+                        <p>
+                            A camiseta Dri-Fit Nike Pro Training é feita com tecido leve e respirável que ajuda a manter você seco e confortável durante os treinos intensos.
+                        </p>
+                        <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nike.com.br/shorts-nike-sportswear-club-fleece-infantil-026720.html?cor=7T">
+                        <img src="./images/produtos/shorts.avif" alt="Shorts">
+                        <h3>Shorts Fleece </h3>
+                        <p>
+                            O shorts Nike Sportswear Club Fleece Infantil é feito com tecido macio e confortável que oferece aquecimento e proteção durante os dias frios.
+                        </p>
+                        <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+            <li class="jqtstrm">
+                <a href="https://www.amazon.com.br/Jaqueta-masculina-Sportswear-Storm-FIT-Windrunner/dp/B0BL7KVYQX">
+                        <img src="./images/produtos/jaqueta.jpg" alt="Jaqueta">
+                        <h3>Jaqueta Storm</h3>
+                        <p>
+                            A jaqueta Nike Sportswear Storm FIT Windrunner é feita com tecido leve e resistente que oferece proteção contra o vento e a chuva.
+                        </p>
+                        <button type="button" class="btn">Adquirir</button>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nike.com.br/calca-nike-sportswear-club-fleece-masculina-061800.html?cor=7T">
+                        <img src="./images/produtos/calca.webp" alt="Calça">
+                        <h3>Calça Fleece</h3>
+                        <p>
+                            A calça Nike Sportswear Club Fleece Masculina é feita com tecido macio e confortável que oferece aquecimento e proteção durante os dias frios.
+                        </p>
+                        <button type="button" class="btn">Adquirir</button>
+                    </a>
+            </li>
+        </ul>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Nike Shoes. Todos os direitos reservados.</p>
-            <ul class="footer-links">
-                <li><a href="https://www.nike.com.br/politica-privacidade">Privacidade</a></li>
-                <li><a href="https://www.nike.com.br/termos-de-uso">Termos de Uso</a></li> 
-            </ul>
+        <a href="https://media.about.nike.com/files/c5e44b12-de63-4b92-b4c4-fc940246f0fb/2020-Nike-Code-of-Conduct.Brazilian-Portuguese.FINAL_.pdf">&copy; 2024 Nike. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

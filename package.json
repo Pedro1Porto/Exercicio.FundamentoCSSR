@@ -1,0 +1,24 @@
+{
+  "name": "exercicio_fundamentos_css_responsivo",
+  "version": "1.0.0",
+  "description": "\"# Exerc�cio Pessoal para CSS Responsivo\"",
+  "homepage": "https://github.com/Pedro1Porto/Exercicio.FundamentoCSSR#readme",
+  "bugs": {
+    "url": "https://github.com/Pedro1Porto/Exercicio.FundamentoCSSR/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro1Porto/Exercicio.FundamentoCSSR.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

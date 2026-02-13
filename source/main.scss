@@ -1,0 +1,60 @@
+@use 'sobre.scss';
+@use 'header.scss';
+@use 'produtos.scss';
+
+body{
+    background-color: #eee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
+    min-width: 65px;
+    border-radius: 4px;
+    background-color: #2980b9;
+
+    a{
+        font-weight: normal;
+        font-size: 15px;
+        margin: 8px;
+    }
+}
+
+li:hover > .submenu{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+footer{
+    background-color: #8e44ad;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-style: italic;
+        &:hover{
+            transition: all 0.3s ease;
+        }
+    }
+}
